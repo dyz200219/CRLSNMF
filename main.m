@@ -1,6 +1,6 @@
 clear;
 clc;
-addpath('tool/', 'dataset/', 'result/', 'user');
+addpath('tool/', 'dataset/', 'user');
 
 load handwritten.mat
 X{1} = pixel'; 
@@ -17,7 +17,7 @@ beta = 1e6;
 gamma = 1e8;
 sigma = 1e3;     % sigma = alpha/2
 
-fileID = fopen('result/handwritten_MYNMF_tune.txt','a');
+fileID = fopen('handwritten_MYNMF_tune.txt','a');
 replic = 10;
 
 AC_ = zeros(1, replic);
